@@ -1,0 +1,11 @@
+//colors
+@import "./colors.scss";
+
+/*layouts*/
+@import "../layout/MainLayout/MainLayout.scss";
+
+//components
+@import "../components/Header/Menu/Menu.scss";
+@import "../components/Header/Header.scss";
+@import "../components/ListNews/LitsNews.scss";
+@import "../components/Header/TopBar/TopBar.scss";
