@@ -15,7 +15,7 @@
 
     &__menu {
       display: flex;
-      align-items: flex-start;
+      align-items: flex-start !important;
       border-bottom-style: solid;
       border-width: 1px;
       border-color: rgba(#000, 0.1);

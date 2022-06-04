@@ -15,13 +15,15 @@
 
     img {
       width: 100%;
+      min-height: 178px !important;
+      max-height: 178px !important;
     }
 
     h2 {
       text-align: center;
       margin-top: 5px;
-      font-size: 15px;
-      color: $font-grey;
+      font-size: 17px;
+      color: black;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;

@@ -1,6 +1,7 @@
 import React from "react";
 import { map } from "lodash";
 import { Grid, Image } from "semantic-ui-react";
+import Link from "next/link";
 import useWindowSize from "../../hooks/useWindowSize";
 import {
   breakpointUpSm,
@@ -46,14 +47,20 @@ function N(props) {
   const { n } = props;
   return (
     <Grid.Column key={n.id} className="list-news__n">
-      <a>
-        <h2>{n.title}</h2>
-        <div className="list-games__game-poster">
-          <div className="list-games__game-poster-info">
-            <span className="price">${n.subtitle}</span>
+      <Link href={`/news/${n.post}`}>
+        <a>
+          <h2>{n.title}</h2>
+          <div className="list-games__game-poster">
+            <Image src={n.img} alt={n.title} />
+            <div className="list-games__game-poster-info">
+              <p>
+                <span className="price">Autor: </span>
+                {n.author}
+              </p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </Link>
     </Grid.Column>
   );
 }

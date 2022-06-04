@@ -1,0 +1,20 @@
+.news__left__MainInfo {
+  margin-top: 10px;
+  .elemento {
+    margin-top: 8px;
+  }
+
+  &-secciones-textos-parrafo {
+    text-align: justify;
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+
+    &__title {
+      margin-bottom: 4px;
+    }
+  }
+}

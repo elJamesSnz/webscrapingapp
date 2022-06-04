@@ -1,0 +1,19 @@
+.news {
+  display: flex;
+  &__left {
+    background-color: transparent;
+    flex-basis: calc(75% - 12px);
+    display: flex !important;
+    flex-direction: column;
+    padding: 30px 5px;
+  }
+
+  &__right {
+    flex-basis: calc(25% - 12px);
+    padding: 30px 30px;
+  }
+
+  .secc {
+    padding: 30px 10px;
+  }
+}

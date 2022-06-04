@@ -1,0 +1,26 @@
+.news__left__HeaderInfo {
+  display: flex;
+  flex-direction: column;
+
+  .elemento {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: black;
+    margin-right: 3px;
+  }
+
+  &-author {
+    font-size: 16px;
+    font-weight: bold;
+    span {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+  &-rating {
+    margin-top: 10px;
+  }
+}
