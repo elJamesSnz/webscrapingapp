@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { getGameByUrlApi } from "../../api/news";
+import { getNewsByUrlApi } from "../../api/news";
 import MainLayout from "../../layout/MainLayout";
 import HeaderNews from "../../components/News/HeaderNews";
 import InfoNews from "../../components/News/InfoNews";
@@ -14,7 +14,7 @@ export default function ShowNews(props) {
 
   useEffect(() => {
     (async () => {
-      const response = await getGameByUrlApi(query.news);
+      const response = await getNewsByUrlApi(query.news);
       setNews(response);
     })();
   }, [query]);

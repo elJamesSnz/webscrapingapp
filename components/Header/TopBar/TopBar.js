@@ -42,7 +42,7 @@ function DateSocial() {
         <div className="TopBar__left__menu__dates">
           <p>{days[d.getDay() - 1]}</p>
           <p>{d.getDate()}</p>
-          <p>{months[d.getMonth() - 1]}</p>
+          <p>{months[d.getMonth()]}</p>
           <p>{d.getFullYear()}</p>
         </div>
         <div className="TopBar__left__menu__social">
@@ -102,7 +102,6 @@ function LogAuth() {
         <a href="/" className="__log">
           Register
         </a>
-        <Button className="__len">En</Button>
       </div>
     </>
   );

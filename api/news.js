@@ -16,13 +16,10 @@ export async function getNewsApi() {
   }
 }
 
-export async function getGameByUrlApi(post) {
+export async function getNewsByUrlApi(post) {
   try {
     let data = await getNewsApi();
-    //const result = data.find((el) => el.post == post);
-    //data.push(result);
     const result = data.find((el) => el.post == post);
-    //return JSON.stringify(result);
     return result;
   } catch (error) {
     console.log(error);
